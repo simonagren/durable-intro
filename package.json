@@ -1,0 +1,27 @@
+{
+  "name": "durable-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonagren/durable-intro.git"
+  },
+  "author": "Simon Ågren",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonagren/durable-intro/issues"
+  },
+  "homepage": "https://github.com/simonagren/durable-intro#readme",
+  "dependencies": {
+    "@pnp/common": "^1.2.8",
+    "@pnp/logging": "^1.2.8",
+    "@pnp/nodejs": "^1.2.8",
+    "@pnp/odata": "^1.2.8",
+    "@pnp/sp": "^1.2.8",
+    "durable-functions": "^1.1.4"
+  }
+}
