@@ -12,8 +12,8 @@ module.exports = async function (context, myTimer) {
         context.log('JavaScript is running late!');
     }
 
-    // start orchestration
-    const instanceId = await client.startNew('OGetUniquePermItems');
+    // start orchestration with hardcoded site name
+    const instanceId = await client.startNew('OGetUniquePermItems', undefined, 'test3');
     
     // Log the started instance
     context.log(`Started orchestration with ID = '${instanceId}'.`);
