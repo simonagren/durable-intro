@@ -11,7 +11,8 @@ module.exports = async function (context) {
 
     // Get all the uniquely permissioned items in this list
     const items = await sp.web.lists.getById(list.Id).items.select('Id','HasUniqueRoleAssignments','FileRef').get();
-    
-    return items;
+    const uniqueItems = items.filter(item => item.HasUniqueRoleAssignments);
+
+    return uniqueItems;
         
 };
